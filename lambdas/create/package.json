@@ -9,9 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fp-ts": "^2.11.4"
+    "fp-ts": "^2.11.4",
+    "fp-ts-std": "^0.11.0"
   },
-  "devDependencies": {
-    "@types/jest": "^27.0.2"
-  }
+  "devDependencies": {}
 }
