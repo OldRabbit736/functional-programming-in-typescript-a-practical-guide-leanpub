@@ -1,7 +1,7 @@
 import {
   CreateReservationRequest,
   LambdaEvent,
-} from "../../../util/domain/types";
+} from "../../../../util/domain/types";
 
 import * as E from "fp-ts/lib/Either";
 import { pipe } from "fp-ts/lib/function";

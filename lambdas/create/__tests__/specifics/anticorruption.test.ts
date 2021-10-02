@@ -1,5 +1,5 @@
-import { CreateReservationRequest } from "../../../util/domain/types";
-import { fromEventToCreateRequest } from "../src/anticorruption";
+import { CreateReservationRequest } from "../../../../util/domain/types";
+import { fromEventToCreateRequest } from "../../src/specifics/anticorruption";
 import { unsafeUnwrap, unsafeUnwrapLeft } from "fp-ts-std/Either";
 
 describe("anti corruption checks", () => {
