@@ -1,0 +1,9 @@
+POST https://fjsjfs9tlb.execute-api.ap-northeast-2.amazonaws.com/prod/reservations
+
+{
+    "hotelId": "1",
+    "userId": "11",
+    "start": "2021-10-03T03:20:30.407Z",
+    "end": "2021-10-04T03:20:30.407Z",
+    "timestamp": "2021-10-03T03:20:30.407Z"
+}
