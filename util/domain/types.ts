@@ -32,3 +32,8 @@ export type CreateReservationPricedWithIdRequest = {
   timestamp: Date;
   price: number;
 };
+
+export type Response = {
+  statusCode: number;
+  body: string;
+};
