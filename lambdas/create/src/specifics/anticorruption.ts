@@ -9,7 +9,8 @@ import { Ord } from "fp-ts/lib/Date";
 import { lt } from "fp-ts/lib/Ord";
 import { Json, JsonRecord, parse } from "fp-ts/lib/Json";
 
-const getBody = (event: LambdaEvent) => event.body;
+// TODO: hm....
+const getBody = (event: LambdaEvent) => event.body!;
 
 const toCreateReservationRequest = (body: Json): CreateReservationRequest => {
   const record = body as JsonRecord;

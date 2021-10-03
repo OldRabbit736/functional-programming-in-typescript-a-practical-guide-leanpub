@@ -1,6 +1,7 @@
 // REST
 export type LambdaEvent = {
-  body: string;
+  queryStringParameters?: QueryStringParams;
+  body?: string;
 };
 
 // DOMAIN
@@ -36,4 +37,25 @@ export type CreateReservationPricedWithIdRequest = {
 export type Response = {
   statusCode: number;
   body: string;
+};
+
+export type QueryStringParams = {
+  hotelId?: string;
+  userId?: string;
+  start?: string;
+};
+
+export type RetrieveReservationRequest = {
+  hotelId: string;
+  userId: string;
+  start: Date;
+};
+
+export type Reservation = {
+  hotelId: string;
+  userId: string;
+  start: Date;
+  end: Date;
+  timestamp: Date;
+  price: number;
 };

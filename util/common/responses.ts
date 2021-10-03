@@ -1,4 +1,4 @@
-import { Response } from "../../../../util/domain/types";
+import { Response } from "../domain/types";
 
 export const okResponse = (message: string): Response => ({
   statusCode: 200,

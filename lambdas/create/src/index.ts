@@ -6,7 +6,7 @@ import * as E from "fp-ts/lib/Either";
 import * as TE from "fp-ts/lib/TaskEither";
 import * as T from "fp-ts/lib/Task";
 import { saveToDatabase } from "./specifics/database";
-import { badRequestResponse, okResponse } from "./specifics/responses";
+import { badRequestResponse, okResponse } from "../../../util/common/responses";
 
 export const handler = async (event: LambdaEvent) => {
   return pipe(
