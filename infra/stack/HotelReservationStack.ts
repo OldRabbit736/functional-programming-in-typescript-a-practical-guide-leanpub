@@ -28,5 +28,22 @@ export class HotelReservationStack extends cdk.Stack {
       createReservationLambda
     );
     reservationsResource.addMethod("POST", createReservationIntegration);
+
+    const getReservationLambda = new nodelambda.NodejsFunction(
+      this,
+      "get-reservation",
+      {
+        entry: "lambdas/retrieve/src/index.ts",
+        handler: "handler",
+        memorySize: 128,
+        timeout: cdk.Duration.minutes(2),
+      }
+    );
+
+    // GET reservations
+    const getReservationIntegration = new apigw.LambdaIntegration(
+      getReservationLambda
+    );
+    reservationsResource.addMethod("GET", getReservationIntegration);
   }
 }
