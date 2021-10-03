@@ -1,4 +1,3 @@
-import { string } from "fp-ts";
 import * as TE from "fp-ts/lib/TaskEither";
 import {
   Reservation,
